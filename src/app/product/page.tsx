@@ -1,11 +1,12 @@
-import Link from "next/link";
 
-
-export default function productList() {
+import MenuStore from '@/app/ui/MenuStore/MenuStore'; // Importa el componente MiComponente
+export default function Page() {
   return (
-    <>
-    <h1><Link href="product/1">producto1</Link></h1>
-   
-    </>
-  )
+    <main className="flex min-h-screen flex-col p-6">
+      {/* Integra el componente MiComponente para mostrar los datos de la API */}
+      <div className="mt-8">
+        <MenuStore></MenuStore>
+      </div>
+    </main>
+  );
 }
